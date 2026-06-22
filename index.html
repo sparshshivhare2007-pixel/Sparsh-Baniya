@@ -19,7 +19,9 @@
 
         body {
             font-family: 'Plus Jakarta Sans', sans-serif;
-            background: #030712;
+            /* Custom background image integration */
+            background: url('assets/background.jpg') no-repeat center center fixed;
+            background-size: cover;
             color: #f3f4f6;
             overflow-x: hidden;
             min-height: 100vh;
@@ -42,8 +44,9 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: radial-gradient(circle at 50% 50%, rgba(3, 7, 18, 0.6) 0%, #030712 100%);
-            backdrop-filter: blur(4px);
+            /* Semi-transparent dark radial layer to ensure perfect contrast over your background image */
+            background: radial-gradient(circle at 50% 50%, rgba(3, 7, 18, 0.75) 0%, #030712 95%);
+            backdrop-filter: blur(2px); /* Premium soft blur effect */
             z-index: 1;
         }
 
